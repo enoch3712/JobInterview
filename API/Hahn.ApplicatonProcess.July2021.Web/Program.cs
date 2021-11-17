@@ -20,6 +20,7 @@ namespace Hahn.ApplicationProcess.July2021.Web
         {
             var config = new ConfigurationBuilder()
                 .AddJsonFile("appsettings.json")
+				.WriteTo.File("log.txt", rollingInterval: RollingInterval.Day)
                 .Build();
 
             Log.Logger = new LoggerConfiguration()
