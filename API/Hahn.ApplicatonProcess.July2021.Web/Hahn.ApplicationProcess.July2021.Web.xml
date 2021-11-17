@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hahn.ApplicationProcess.July2021.Web</name>
+    </assembly>
+    <members>
+        <member name="M:Hahn.ApplicationProcess.July2021.Web.Controllers.UserController.Get(Hahn.ApplicationProcess.July2021.Data.Repository.IUnitOfWork)">
+            <summary>
+            Gets the list of all Users.
+            </summary>
+            <returns>The list of Users.</returns>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.July2021.Web.Controllers.UserController.Get(System.Int32,Hahn.ApplicationProcess.July2021.Data.Repository.IUserRepository)">
+            <summary>
+            Gets the user with the id.
+            </summary>
+            <param name="id"></param>
+            <returns>the user with the id.</returns>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.July2021.Web.Controllers.UserController.Post(Hahn.ApplicationProcess.July2021.Domain.User,Hahn.ApplicationProcess.July2021.Data.Service.Interfaces.IAddUserService)">
+             <summary>
+             Creates a User.
+             </summary>
+             <param name="item"></param>
+             <returns>A newly created User</returns>
+             <remarks>
+             Sample request:
+            
+             POST /user
+             {
+                "age": 20,
+                "firstName": "asdad",
+                "lastName": "adas",
+                "address": "12313",
+                "email": "dasd@fsfs.com",
+                "assets": [
+                {
+                    "id": "bitcoin",
+                    "symbol": "BTC",
+                    "name": "Bitcoin"
+                }]
+            }
+             </remarks>
+             <response code="201">Returns the newly created user</response>
+             <response code="400">If the user is not in the proper format</response>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.July2021.Web.Controllers.UserController.Put(System.Int32,Hahn.ApplicationProcess.July2021.Domain.User,Hahn.ApplicationProcess.July2021.Data.Service.Interfaces.IUpdateService)">
+            <summary>
+            Updates the user with the id.
+            </summary>
+            <param name="id"></param>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.July2021.Web.Controllers.UserController.Delete(System.Int32,Hahn.ApplicationProcess.July2021.Data.Service.Interfaces.IDeleteUserService)">
+            <summary>
+            Deletes the user with the id.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

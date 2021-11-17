@@ -1,0 +1,25 @@
+<template>
+    <ai-dialog>
+       <ai-dialog-body>
+            <div class="shadow p-3 mb-5 bg-white rounded" if.bind="visible">
+                <h5 class="modal-title">Are you sure you want to rest the data?</h5>
+                <button type="button" 
+                        class="btn btn-secondary" 
+                        data-dismiss="modal" 
+                        t="cancel"
+                        click.delegate="close()">
+                    Cancel
+                </button>
+                <button type="button" 
+                        class="btn btn-primary" 
+                        t="yes" 
+                        click.delegate="reset()">
+                    Yes
+                </button>
+            </div>
+       </ai-dialog-body>
+ 
+       <ai-dialog-footer>
+       </ai-dialog-footer>	
+    </ai-dialog>	
+ </template> 

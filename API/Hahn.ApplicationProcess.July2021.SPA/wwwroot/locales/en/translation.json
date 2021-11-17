@@ -1,0 +1,11 @@
+{
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "age": "Age",
+    "addess": "Address",
+    "email": "Email",
+    "reset": "Reset",
+    "send": "Send",
+    "resetData": "Reset Data",
+    "resetText": "Are you sure you want to reset the data?"
+ }
